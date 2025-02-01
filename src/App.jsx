@@ -1,15 +1,9 @@
-import Header from "./components/header"
-import Bandhig from "./pages/bandhig"
-import Footer from "./pages/footer"
-import ImageHeader from "./pages/imageHeader"
+import EvantsPage from "./pages/evants"
 
 const App = ()=>{
   return(
     <div>
-      <Header/>
-      <ImageHeader/>
-      <Bandhig/>
-      <Footer/>
+      <EvantsPage/>
     </div>
   )
 }

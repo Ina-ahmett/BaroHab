@@ -2,7 +2,7 @@ import Image1 from "../assets/imageOne.webp";
 const Bandhig = ()=>{
     return(
         <div className="flex justify-around w-[80%] ml-40 mt-20">
-            <div>
+            <div className="mt-10">
                 <h1 className="font-bold text-4xl w-[500px]">Find the right financing
                 options for you</h1>
                 <p className="mt-5 text-gray-600 w-[500px]">Finances shouldn't be a barrier to accessing our bootcamps. We're always finding new ways to facilitate payments and fundings.</p>
