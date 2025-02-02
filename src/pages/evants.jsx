@@ -1,5 +1,12 @@
 import Header from "../components/header";
 import imageTwo from "../assets/imageTwo.webp";
+import Categories from "../components/categoriesLissts";
+import imageThree from "../assets/imageThree.webp";
+import imageFour from "../assets/imageFour.webp";
+import imageFive from "../assets/imageFive.webp"
+import imageSix from "../assets/imageSix.webp"
+import imageSeven from "../assets/imageSeven.webp"
+import Footer from "../components/footer";
 
 const EvantsPage = ()=>{
     return(
@@ -14,9 +21,9 @@ const EvantsPage = ()=>{
                 <img src={imageTwo} className="rounded-xl" />
             </div>
 
-            <div>
+            <div className="flex gap-5">
                 {/* leftSide */}
-                <div className="p-6 max-w-xs bg-white ml-36 mt-5">
+                <div className="p-6 max-w-xs bg-white ml-36">
                     <h2 className="text-xl font-bold mb-4">Filters</h2>
 
                     {/* Topic */}
@@ -93,7 +100,35 @@ const EvantsPage = ()=>{
                 </div>
 
                 {/* rightSide */}
+                <div className="mt-5">
+                    <h1 className="text-xl font-bold mb-4">Events that match your search</h1>
+                    <hr className="mb-10"/>
+
+                    <h1 className="text-2xl">Categories</h1>
+                    <ul className="flex gap-5 mt-2">
+                        <li className="bg-[#F6F2FC] text-blue-800 font-bold px-3 rounded-md">All</li>
+                        <li className="hover:bg-[#F6F2FC] hover:text-blue-800 font-bold px-3 rounded-md">WorkShop</li>
+                        <li className="hover:bg-[#F6F2FC] hover:text-blue-800 font-bold px-3 rounded-md">Talk</li>
+                        <li className="hover:bg-[#F6F2FC] hover:text-blue-800 font-bold px-3 rounded-md">Info Session</li>
+                        <li className="hover:bg-[#F6F2FC] hover:text-blue-800 font-bold px-3 rounded-md">Demo Day</li>
+                    </ul>
+                    {/* Evants Match */}
+                    <div>
+                        <Categories img={imageThree} title="Info Session"/>
+                        <Categories img={imageFour} title="Demo Day"/>
+                        <Categories img={imageFive} title="Talk"/>
+                        <Categories img={imageSix} title="WorkShop"/>
+                        <Categories img={imageSeven} title="Info Session"/>
+                        <Categories img={imageThree} title="Demo Day"/>
+                        <Categories img={imageFour} title="Talk"/>
+                        <Categories img={imageFive} title="WorkShop"/>
+                        <Categories img={imageSix} title="Info Session"/>
+                        <Categories img={imageSeven} title="WorkShop"/>
+                        <Categories img={imageThree} title="Demo Day"/>
+                    </div>
+                </div>
             </div>
+            <Footer/>
         </div>
     )
 }
